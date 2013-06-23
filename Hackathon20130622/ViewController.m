@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "MyXMLParser.h"
 #import "Place.h"
+#import "PlaceManager.h"
 @interface ViewController (){
     MyXMLParser *_parser;
 }
@@ -25,6 +26,15 @@
 //    _parser = [[MyXMLParser alloc] init];
 //    
 //    [_parser loadingXML:@"http://miseban.com/od/miseban.xml"];
+    
+    PlaceManager *manager = [PlaceManager sharedManager];
+    [manager loadSampleData];
+    for (Place *item in [manager chukaItems]) {
+        item.umaPoint += 10;
+    }
+    NSInteger chuka = [manager totalUmaForChuka];
+    NSLog(@"point = %d", chuka);
+    NSLog(@"chukas = %@", [manager chukaItems]);
 
 }
 

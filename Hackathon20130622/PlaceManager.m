@@ -42,6 +42,22 @@
     return [NSArray arrayWithArray:tmpArray];
 }
 
+- (NSInteger)totalUmaForChuka {
+    return [self totalUmaWithItems:[self chukaItems]];
+}
+- (NSInteger)totalUmaForVolga {
+    return [self totalUmaWithItems:[self volgaItems]];
+}
+- (NSInteger)totalUmaForOrosi {
+    return [self totalUmaWithItems:[self orosiItems]];
+}
+- (NSInteger)totalUmaWithItems:(NSArray *)items {
+    NSInteger total = 0;
+    for (Place *item in items) {
+        total += item.umaPoint;
+    }
+    return total;
+}
 - (void)loadSampleData {
     NSString *path = [[NSBundle mainBundle] pathForResource:@"data"
                                                      ofType:@"json"];

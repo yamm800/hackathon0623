@@ -15,4 +15,7 @@
 - (NSArray *)chukaItems;
 - (NSArray *)volgaItems;
 - (NSArray *)orosiItems;
+- (NSInteger)totalUmaForChuka;
+- (NSInteger)totalUmaForVolga;
+- (NSInteger)totalUmaForOrosi;
 @end
