@@ -10,9 +10,12 @@
 #import <QuartzCore/QuartzCore.h>
 
 #define UMAAA_AA    @"%d(ﾟдﾟ*)ｳﾏｰ"
+#define TYPE_VOLGA @"volga_%d"
+#define TYPE_OROSHI @"oroshi_%d"
+#define TYPE_TYUKA  @"tyuka_%d"
 
 @interface UmaaaViewController (){
-    CAEmitterLayer *emitterLayer;
+    NSInteger type;
 }
 
 @end
@@ -26,25 +29,12 @@
     
     _umaaa_point = 0;
     
-    //パーティクル表示
-    emitterLayer = [CAEmitterLayer layer];
-    CGSize size = self.view.bounds.size;
-    emitterLayer.emitterPosition = CGPointMake(size.width / 2, size.height / 2);
-    emitterLayer.renderMode = kCAEmitterLayerAdditive;
-    [self.view.layer addSublayer:emitterLayer];
+    _umaaaLabel.text = [NSString stringWithFormat:@"%dウマー",_umaaa_point];
     
-    //ウマーボタンの見た目をカスタム
-    _umaaaButton.layer.borderColor = [UIColor redColor].CGColor;
-    _umaaaButton.layer.borderWidth = 3;
-    _umaaaButton.layer.cornerRadius = _umaaaButton.bounds.size.width/2;
-    
-    
-    [_umaaaButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
-    [_umaaaButton setTitle:[NSString stringWithFormat:UMAAA_AA,_umaaa_point]
+    [_umaaaButton setImage:[UIImage imageNamed:@"yellow_umaaa"]
                   forState:UIControlStateNormal];
-    [_umaaaButton setTitle:@" (*´～｀*)ŧ‹\"ŧ‹\""
+    [_umaaaButton setImage:[UIImage imageNamed:@"yellow_mogu"]
                   forState:UIControlStateHighlighted];
-    [_umaaaButton setTitleColor:[UIColor blueColor] forState:UIControlStateHighlighted];
 	// Do any additional setup after loading the view.
 }
 
@@ -60,43 +50,65 @@
         _umaaa_point++;
     }
     
+    _umaaaLabel.text = [NSString stringWithFormat:@"%dウマー",_umaaa_point];
     
     if(_umaaa_point >= 10){
         
-        CAEmitterCell *emitterCell = [CAEmitterCell emitterCell];
-        UIImage *image = [UIImage imageNamed:@"particle1"];
-        emitterCell.contents = (__bridge id)(image.CGImage);
-        emitterCell.emissionLongitude = M_PI * 2;
-        emitterCell.emissionRange = M_PI * 2;
-        //emitterCell.lifetimeRange = 1.2;
-        emitterCell.velocity = 240;
-        emitterCell.birthRate = 8000;
-        emitterCell.scale = 0.5;
-        emitterCell.velocity = 130;
-        emitterCell.lifetime = 3.0;
-        emitterCell.yAcceleration = 80;
-//        emitterCell.beginTime = 1;
-        emitterCell.duration = 0.1;
-//        emitterCell.alphaSpeed = -0.1;
-//        emitterCell.scaleSpeed = -0.1;
-        emitterCell.color = [UIColor colorWithRed:0.89
-                                            green:0.56
-                                             blue:0.36
-                                            alpha:0.5].CGColor;
-
-//        emitterCell.color = [UIColor colorWithRed:0.89
-//                                            green:0.56
-//                                             blue:0.36
-//                                            alpha:0.5].CGColor;
+        [self actionParticle];
         
-        emitterLayer.emitterCells = @[emitterCell];
-        
-        [_umaaaButton setTitle:@"・゜ﾊﾟｧｧｧ(´∀｀*)ﾟ・*"
+        [_umaaaButton setImage:[UIImage imageNamed:@"yellow_paaa"]
                       forState:UIControlStateNormal];
         return;
     }
     
+    NSLog(@"%d_uma",_umaaa_point);
+    
     [_umaaaButton setTitle:[NSString stringWithFormat:UMAAA_AA,_umaaa_point]
                   forState:UIControlStateNormal];
 }
+
+-(void)actionParticle{
+    
+    CGRect screenRect = [[UIScreen mainScreen] applicationFrame];
+    
+    CAEmitterLayer *emitterLayer = [CAEmitterLayer layer];
+    //表示する場所。
+    emitterLayer.emitterPosition = CGPointMake(screenRect.size.width/2.0f, screenRect.size.height/2.0f);
+    
+    NSMutableArray *array = [NSMutableArray array];
+    
+    for (int i = 0; i < 3; i++) {
+        CAEmitterCell *cell = [CAEmitterCell emitterCell];
+        //各種パラメータ。この手のものはいじってみるのが一番わかりやすいです。
+        cell.birthRate = 30;
+        cell.lifetime = 0.5f;
+        cell.lifetimeRange = 0.5f;
+        NSString *imageName = @"particle1";
+        cell.contents =(id)[UIImage imageNamed:imageName].CGImage;
+        cell.velocity = 300.0f;
+        cell.velocityRange = 200.0f;
+        cell.scale = 0.1f;
+        cell.scaleRange = 1.0f;
+        cell.spin = 0.1f;
+        cell.spinRange = 4.0f;
+        cell.yAcceleration = -50;
+        cell.emissionRange = M_PI*2;
+        [array addObject:cell];
+    }
+    
+    emitterLayer.emitterCells = array;
+    
+    //layerにaddSublayerすれば、表示されます。
+    [self.view.layer addSublayer:emitterLayer];
+    
+    //3秒後に停止。停止でなくて、アニメーション加えたりも可能なんで、あれこれできます
+    [self performSelector:@selector(stopEmitter:) withObject:emitterLayer afterDelay:0.3f];
+}
+
+//停止用メソッド。停止でなくても途中でパラメータ変更できます。
+-(void)stopEmitter:(CAEmitterLayer*)emitterLayer{
+    //このbirthRateは、各cellに対するmultiplier
+    emitterLayer.birthRate = 0.0f;
+}
+
 @end

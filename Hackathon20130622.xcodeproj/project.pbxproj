@@ -22,7 +22,17 @@
 		56D128891776836600E1EFEC /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D128871776836600E1EFEC /* MainStoryboard.storyboard */; };
 		56D1288B177685B900E1EFEC /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 56D1288A177685B900E1EFEC /* QuartzCore.framework */; };
 		56D1288F17768BC100E1EFEC /* particle1.png in Resources */ = {isa = PBXBuildFile; fileRef = 56D1288E17768BC100E1EFEC /* particle1.png */; };
+		56D12892177699E100E1EFEC /* SpotListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D12891177699E100E1EFEC /* SpotListViewController.m */; };
+		56D12895177699F800E1EFEC /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D12894177699F800E1EFEC /* DetailViewController.m */; };
+		56D1289A17769F6A00E1EFEC /* yellow_mogu.png in Resources */ = {isa = PBXBuildFile; fileRef = 56D1289717769F6A00E1EFEC /* yellow_mogu.png */; };
+		56D1289B17769F6A00E1EFEC /* yellow_paaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 56D1289817769F6A00E1EFEC /* yellow_paaa.png */; };
+		56D1289C17769F6A00E1EFEC /* yellow_umaaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 56D1289917769F6A00E1EFEC /* yellow_umaaa.png */; };
+		56D128A01776A67900E1EFEC /* TopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1289F1776A67900E1EFEC /* TopViewController.m */; };
+		56D128A31776A86C00E1EFEC /* LoadDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D128A21776A86C00E1EFEC /* LoadDataViewController.m */; };
+		56D128A71776AAE700E1EFEC /* OvalGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D128A61776AAE700E1EFEC /* OvalGraphView.m */; };
 		FE88CF5F1776755A00300F34 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = FE88CF5E1776755A00300F34 /* Place.m */; };
+		FE88CF6117767A5100300F34 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FE88CF6017767A5100300F34 /* data.json */; };
+		FE88CF671776873E00300F34 /* PlaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE88CF661776873E00300F34 /* PlaceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +58,25 @@
 		56D128881776836600E1EFEC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		56D1288A177685B900E1EFEC /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		56D1288E17768BC100E1EFEC /* particle1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = particle1.png; sourceTree = "<group>"; };
+		56D12890177699E100E1EFEC /* SpotListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpotListViewController.h; sourceTree = "<group>"; };
+		56D12891177699E100E1EFEC /* SpotListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpotListViewController.m; sourceTree = "<group>"; };
+		56D12893177699F800E1EFEC /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		56D12894177699F800E1EFEC /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		56D1289717769F6A00E1EFEC /* yellow_mogu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_mogu.png; sourceTree = "<group>"; };
+		56D1289817769F6A00E1EFEC /* yellow_paaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_paaa.png; sourceTree = "<group>"; };
+		56D1289917769F6A00E1EFEC /* yellow_umaaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellow_umaaa.png; sourceTree = "<group>"; };
+		56D1289D1776A2AA00E1EFEC /* defs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = defs.h; sourceTree = "<group>"; };
+		56D1289E1776A67900E1EFEC /* TopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopViewController.h; sourceTree = "<group>"; };
+		56D1289F1776A67900E1EFEC /* TopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopViewController.m; sourceTree = "<group>"; };
+		56D128A11776A86C00E1EFEC /* LoadDataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadDataViewController.h; sourceTree = "<group>"; };
+		56D128A21776A86C00E1EFEC /* LoadDataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadDataViewController.m; sourceTree = "<group>"; };
+		56D128A51776AAE700E1EFEC /* OvalGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OvalGraphView.h; sourceTree = "<group>"; };
+		56D128A61776AAE700E1EFEC /* OvalGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OvalGraphView.m; sourceTree = "<group>"; };
 		FE88CF5D1776755A00300F34 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		FE88CF5E1776755A00300F34 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		FE88CF6017767A5100300F34 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		FE88CF651776873E00300F34 /* PlaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceManager.h; sourceTree = "<group>"; };
+		FE88CF661776873E00300F34 /* PlaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,10 +84,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5674D5FA1775D05100930ED4 /* CoreGraphics.framework in Frameworks */,
 				56D1288B177685B900E1EFEC /* QuartzCore.framework in Frameworks */,
 				5674D5F61775D05100930ED4 /* UIKit.framework in Frameworks */,
 				5674D5F81775D05100930ED4 /* Foundation.framework in Frameworks */,
-				5674D5FA1775D05100930ED4 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +97,7 @@
 		5674D5E91775D05100930ED4 = {
 			isa = PBXGroup;
 			children = (
+				56D128A41776AABD00E1EFEC /* views */,
 				56D1288C17768BAE00E1EFEC /* assets */,
 				56D1288617767A7A00E1EFEC /* controller */,
 				5674D5FB1775D05100930ED4 /* Hackathon20130622 */,
@@ -110,6 +138,8 @@
 				FE88CF5D1776755A00300F34 /* Place.h */,
 				FE88CF5E1776755A00300F34 /* Place.m */,
 				5674D5FC1775D05100930ED4 /* Supporting Files */,
+				FE88CF651776873E00300F34 /* PlaceManager.h */,
+				FE88CF661776873E00300F34 /* PlaceManager.m */,
 			);
 			path = Hackathon20130622;
 			sourceTree = "<group>";
@@ -117,6 +147,7 @@
 		5674D5FC1775D05100930ED4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE88CF6017767A5100300F34 /* data.json */,
 				5674D5FD1775D05100930ED4 /* Hackathon20130622-Info.plist */,
 				5674D5FE1775D05100930ED4 /* InfoPlist.strings */,
 				5674D6011775D05100930ED4 /* main.m */,
@@ -124,6 +155,7 @@
 				5674D6071775D05100930ED4 /* Default.png */,
 				5674D6091775D05100930ED4 /* Default@2x.png */,
 				5674D60B1775D05100930ED4 /* Default-568h@2x.png */,
+				56D1289D1776A2AA00E1EFEC /* defs.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -131,8 +163,16 @@
 		56D1288617767A7A00E1EFEC /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				56D1289E1776A67900E1EFEC /* TopViewController.h */,
+				56D1289F1776A67900E1EFEC /* TopViewController.m */,
 				56D1288317767A6300E1EFEC /* UmaaaViewController.h */,
 				56D1288417767A6300E1EFEC /* UmaaaViewController.m */,
+				56D12890177699E100E1EFEC /* SpotListViewController.h */,
+				56D12891177699E100E1EFEC /* SpotListViewController.m */,
+				56D12893177699F800E1EFEC /* DetailViewController.h */,
+				56D12894177699F800E1EFEC /* DetailViewController.m */,
+				56D128A11776A86C00E1EFEC /* LoadDataViewController.h */,
+				56D128A21776A86C00E1EFEC /* LoadDataViewController.m */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -148,9 +188,29 @@
 		56D1288D17768BB600E1EFEC /* images */ = {
 			isa = PBXGroup;
 			children = (
+				56D1289617769F6A00E1EFEC /* yellow */,
 				56D1288E17768BC100E1EFEC /* particle1.png */,
 			);
 			name = images;
+			sourceTree = "<group>";
+		};
+		56D1289617769F6A00E1EFEC /* yellow */ = {
+			isa = PBXGroup;
+			children = (
+				56D1289717769F6A00E1EFEC /* yellow_mogu.png */,
+				56D1289817769F6A00E1EFEC /* yellow_paaa.png */,
+				56D1289917769F6A00E1EFEC /* yellow_umaaa.png */,
+			);
+			path = yellow;
+			sourceTree = "<group>";
+		};
+		56D128A41776AABD00E1EFEC /* views */ = {
+			isa = PBXGroup;
+			children = (
+				56D128A51776AAE700E1EFEC /* OvalGraphView.h */,
+				56D128A61776AAE700E1EFEC /* OvalGraphView.m */,
+			);
+			name = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,6 +270,10 @@
 				5674D60C1775D05100930ED4 /* Default-568h@2x.png in Resources */,
 				56D128891776836600E1EFEC /* MainStoryboard.storyboard in Resources */,
 				56D1288F17768BC100E1EFEC /* particle1.png in Resources */,
+				FE88CF6117767A5100300F34 /* data.json in Resources */,
+				56D1289A17769F6A00E1EFEC /* yellow_mogu.png in Resources */,
+				56D1289B17769F6A00E1EFEC /* yellow_paaa.png in Resources */,
+				56D1289C17769F6A00E1EFEC /* yellow_umaaa.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,6 +290,12 @@
 				5674D61A1775DA3900930ED4 /* MyXMLParser.m in Sources */,
 				FE88CF5F1776755A00300F34 /* Place.m in Sources */,
 				56D1288517767A6300E1EFEC /* UmaaaViewController.m in Sources */,
+				FE88CF671776873E00300F34 /* PlaceManager.m in Sources */,
+				56D12892177699E100E1EFEC /* SpotListViewController.m in Sources */,
+				56D12895177699F800E1EFEC /* DetailViewController.m in Sources */,
+				56D128A01776A67900E1EFEC /* TopViewController.m in Sources */,
+				56D128A31776A86C00E1EFEC /* LoadDataViewController.m in Sources */,
+				56D128A71776AAE700E1EFEC /* OvalGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

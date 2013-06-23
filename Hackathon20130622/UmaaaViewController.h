@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface UmaaaViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *umaaaLabel;
 
 @property (nonatomic)                   NSInteger   umaaa_point;
 @property (weak, nonatomic) IBOutlet    UIButton    *umaaaButton;
