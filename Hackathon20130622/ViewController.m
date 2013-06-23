@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "MyXMLParser.h"
-
+#import "Place.h"
 @interface ViewController (){
     MyXMLParser *_parser;
 }
@@ -22,9 +22,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    _parser = [[MyXMLParser alloc] init];
-    
-    [_parser loadingXML:@"http://miseban.com/od/miseban.xml"];
+//    _parser = [[MyXMLParser alloc] init];
+//    
+//    [_parser loadingXML:@"http://miseban.com/od/miseban.xml"];
+
 }
 
 

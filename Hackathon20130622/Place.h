@@ -23,5 +23,7 @@
 @property (nonatomic, readonly, copy) NSString *zipcode;
 @property (nonatomic, readonly, copy) NSString *address;
 
+@property (nonatomic) NSInteger umaPoint;
+
 - (id)initWithDictionary:(NSDictionary *)aDict;
 @end
