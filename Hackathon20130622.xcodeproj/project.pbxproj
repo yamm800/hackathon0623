@@ -16,11 +16,13 @@
 		5674D6081775D05100930ED4 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5674D6071775D05100930ED4 /* Default.png */; };
 		5674D60A1775D05100930ED4 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5674D6091775D05100930ED4 /* Default@2x.png */; };
 		5674D60C1775D05100930ED4 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5674D60B1775D05100930ED4 /* Default-568h@2x.png */; };
-		5674D60F1775D05100930ED4 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5674D60D1775D05100930ED4 /* MainStoryboard.storyboard */; };
 		5674D6121775D05100930ED4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674D6111775D05100930ED4 /* ViewController.m */; };
 		5674D61A1775DA3900930ED4 /* MyXMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5674D6191775DA3900930ED4 /* MyXMLParser.m */; };
 		56D1288517767A6300E1EFEC /* UmaaaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 56D1288417767A6300E1EFEC /* UmaaaViewController.m */; };
 		FE88CF5F1776755A00300F34 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = FE88CF5E1776755A00300F34 /* Place.m */; };
+		FE88CF6117767A5100300F34 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = FE88CF6017767A5100300F34 /* data.json */; };
+		FE88CF641776832400300F34 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE88CF621776832400300F34 /* MainStoryboard.storyboard */; };
+		FE88CF671776873E00300F34 /* PlaceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FE88CF661776873E00300F34 /* PlaceManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,7 +39,6 @@
 		5674D6071775D05100930ED4 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5674D6091775D05100930ED4 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5674D60B1775D05100930ED4 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5674D60E1775D05100930ED4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5674D6101775D05100930ED4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5674D6111775D05100930ED4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5674D6181775DA3900930ED4 /* MyXMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyXMLParser.h; sourceTree = "<group>"; };
@@ -46,6 +47,10 @@
 		56D1288417767A6300E1EFEC /* UmaaaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UmaaaViewController.m; path = Hackathon20130622/UmaaaViewController.m; sourceTree = "<group>"; };
 		FE88CF5D1776755A00300F34 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Place.h; sourceTree = "<group>"; };
 		FE88CF5E1776755A00300F34 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Place.m; sourceTree = "<group>"; };
+		FE88CF6017767A5100300F34 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		FE88CF631776832400300F34 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		FE88CF651776873E00300F34 /* PlaceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaceManager.h; sourceTree = "<group>"; };
+		FE88CF661776873E00300F34 /* PlaceManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaceManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +98,9 @@
 		5674D5FB1775D05100930ED4 /* Hackathon20130622 */ = {
 			isa = PBXGroup;
 			children = (
+				FE88CF621776832400300F34 /* MainStoryboard.storyboard */,
 				5674D6041775D05100930ED4 /* AppDelegate.h */,
 				5674D6051775D05100930ED4 /* AppDelegate.m */,
-				5674D60D1775D05100930ED4 /* MainStoryboard.storyboard */,
 				5674D6101775D05100930ED4 /* ViewController.h */,
 				5674D6111775D05100930ED4 /* ViewController.m */,
 				5674D6181775DA3900930ED4 /* MyXMLParser.h */,
@@ -103,6 +108,8 @@
 				FE88CF5D1776755A00300F34 /* Place.h */,
 				FE88CF5E1776755A00300F34 /* Place.m */,
 				5674D5FC1775D05100930ED4 /* Supporting Files */,
+				FE88CF651776873E00300F34 /* PlaceManager.h */,
+				FE88CF661776873E00300F34 /* PlaceManager.m */,
 			);
 			path = Hackathon20130622;
 			sourceTree = "<group>";
@@ -110,6 +117,7 @@
 		5674D5FC1775D05100930ED4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				FE88CF6017767A5100300F34 /* data.json */,
 				5674D5FD1775D05100930ED4 /* Hackathon20130622-Info.plist */,
 				5674D5FE1775D05100930ED4 /* InfoPlist.strings */,
 				5674D6011775D05100930ED4 /* main.m */,
@@ -185,7 +193,8 @@
 				5674D6081775D05100930ED4 /* Default.png in Resources */,
 				5674D60A1775D05100930ED4 /* Default@2x.png in Resources */,
 				5674D60C1775D05100930ED4 /* Default-568h@2x.png in Resources */,
-				5674D60F1775D05100930ED4 /* MainStoryboard.storyboard in Resources */,
+				FE88CF6117767A5100300F34 /* data.json in Resources */,
+				FE88CF641776832400300F34 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +211,7 @@
 				5674D61A1775DA3900930ED4 /* MyXMLParser.m in Sources */,
 				FE88CF5F1776755A00300F34 /* Place.m in Sources */,
 				56D1288517767A6300E1EFEC /* UmaaaViewController.m in Sources */,
+				FE88CF671776873E00300F34 /* PlaceManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,10 +226,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		5674D60D1775D05100930ED4 /* MainStoryboard.storyboard */ = {
+		FE88CF621776832400300F34 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5674D60E1775D05100930ED4 /* en */,
+				FE88CF631776832400300F34 /* en */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
