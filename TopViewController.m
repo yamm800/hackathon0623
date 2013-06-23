@@ -36,7 +36,8 @@
     
     OvalGraphView *oGraph =
     [[OvalGraphView alloc] initWithFrame:
-     CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.width)];
+     CGRectMake(0, 0, self.view.frame.size.width/2, self.view.frame.size.width/2)];
+    oGraph.center = CGPointMake(self.view.center.x, oGraph.center.y);
     [self.view addSubview:oGraph];
 	
 }

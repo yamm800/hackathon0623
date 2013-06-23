@@ -33,7 +33,7 @@
 	// Do any additional setup after loading the view.
     
     _placeManager = [PlaceManager sharedManager];
-    [_placeManager loadSampleData];
+    [_placeManager loadFromServer];
     
 }
 

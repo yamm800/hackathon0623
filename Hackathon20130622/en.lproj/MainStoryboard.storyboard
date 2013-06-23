@@ -18,7 +18,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iUA-T9-GYa">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="iUA-T9-GYa">
                                 <rect key="frame" x="103" y="316" width="115" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="ボルガライス">
@@ -32,7 +32,7 @@
                                     <segue destination="A8y-OJ-JIy" kind="push" id="bLM-TC-eRv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oCe-6g-ZDV">
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oCe-6g-ZDV">
                                 <rect key="frame" x="110" y="391" width="100" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="おろしそば">
@@ -46,7 +46,7 @@
                                     <segue destination="A8y-OJ-JIy" kind="push" id="doy-XF-34M"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w87-b4-Qy5">
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="w87-b4-Qy5">
                                 <rect key="frame" x="103" y="241" width="115" height="44"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <state key="normal" title="駅前中華そば">
@@ -194,10 +194,13 @@
         </scene>
     </scenes>
     <classes>
+        <class className="LoadDataViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LoadDataViewController.h"/>
+        </class>
         <class className="SpotListViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/SpotListViewController.h"/>
         </class>
-        <class className="TopViewController" superclassName="UIViewController">
+        <class className="TopViewController" superclassName="LoadDataViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TopViewController.h"/>
         </class>
         <class className="UmaaaViewController" superclassName="UIViewController">

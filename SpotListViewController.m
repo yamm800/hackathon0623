@@ -40,7 +40,7 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
     placeManager = [PlaceManager sharedManager];
-    [placeManager loadSampleData];
+    [placeManager loadFromServer];
     
     NSLog(@"type = %d",self.type);
     

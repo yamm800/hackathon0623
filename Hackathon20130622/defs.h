@@ -9,10 +9,8 @@
 #ifndef Hackathon20130622_defs_h
 #define Hackathon20130622_defs_h
 
-enum {
-    TYPE_CHUKA,
-    TYPE_VOLGA,
-    TYPE_OROSI
-};
+#define TYPE_CHUKA  3
+#define TYPE_VOLGA  2
+#define TYPE_OROSI  1
 
 #endif

@@ -50,15 +50,15 @@
 }
 
 - (NSArray *)chukaItems {
-    return [self itemsWithCategory:0];
+    return [self itemsWithCategory:3];
 }
 
 - (NSArray *)volgaItems {
-    return [self itemsWithCategory:1];
+    return [self itemsWithCategory:2];
 }
 
 - (NSArray *)orosiItems {
-    return [self itemsWithCategory:2];
+    return [self itemsWithCategory:1];
 }
 
 - (NSArray *)itemsWithCategory:(NSInteger)category {
