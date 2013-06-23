@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "MyXMLParser.h"
 
-@interface ViewController ()
+@interface ViewController (){
+    MyXMLParser *_parser;
+}
 
 @end
 
@@ -18,12 +21,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    _parser = [[MyXMLParser alloc] init];
+    
+    [_parser loadingXML:@"http://miseban.com/od/miseban.xml"];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end
