@@ -28,14 +28,16 @@
 //    [_parser loadingXML:@"http://miseban.com/od/miseban.xml"];
     
     PlaceManager *manager = [PlaceManager sharedManager];
-    [manager loadSampleData];
+    [manager loadFromServer];
     for (Place *item in [manager chukaItems]) {
         item.umaPoint += 10;
     }
     NSInteger chuka = [manager totalUmaForChuka];
     NSLog(@"point = %d", chuka);
     NSLog(@"chukas = %@", [manager chukaItems]);
-
+    NSLog(@"orosis = %@", [manager orosiItems]);
+    NSLog(@"volgas = %@", [manager volgaItems]);
+    
 }
 
 
