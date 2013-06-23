@@ -12,9 +12,13 @@
 
 + (PlaceManager *)sharedManager;
 - (void)loadSampleData;
+- (void)loadFromServer;
 - (NSArray *)chukaItems;
+- (NSArray *)sortedChukaItems;
 - (NSArray *)volgaItems;
+- (NSArray *)sortedVolgaItems;
 - (NSArray *)orosiItems;
+- (NSArray *)sortedOrosiItems;
 - (NSInteger)totalUmaForChuka;
 - (NSInteger)totalUmaForVolga;
 - (NSInteger)totalUmaForOrosi;

@@ -24,7 +24,9 @@
 
 @end
 @implementation Place
-
+- (NSString *)description {
+    return [NSString stringWithFormat:@"%@ NAME:%@ POINT:%d", [super description], self.name, self.umaPoint];
+}
 - (id)initWithDictionary:(NSDictionary *)aDict {
     self = [super init];
     if (self) {
@@ -41,6 +43,8 @@
         self.holiday = [aDict objectForKey:@"holiday"];
         self.zipcode = [aDict objectForKey:@"zipcode"];
         self.address = [aDict objectForKey:@"address"];
+        
+        self.umaPoint = rand() % 101;
     }
     return self;
 }

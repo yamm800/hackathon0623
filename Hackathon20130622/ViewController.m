@@ -35,7 +35,9 @@
     NSInteger chuka = [manager totalUmaForChuka];
     NSLog(@"point = %d", chuka);
     NSLog(@"chukas = %@", [manager chukaItems]);
-
+    NSLog(@"orosis = %@", [manager orosiItems]);
+    NSLog(@"volgas = %@", [manager volgaItems]);
+    
 }
 
 
